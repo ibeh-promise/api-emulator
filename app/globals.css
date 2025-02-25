@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  /* --foreground: #171717; */
+}
+
+[data-theme='light'] {
+  --background: #0000;
+}
+[data-theme='dark'] {
+  --background: #0000;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+.bg-image{
+  background-image: url('../public/watermark.svg');
+}
