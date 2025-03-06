@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
       <aside>
-        <img src="/api.png" className="w-16 h-16" />
+        <Image alt="website logo" src="/api.png" className="w-16 h-16" />
         <p>
           Proxy Tech Inc.
           <br />
