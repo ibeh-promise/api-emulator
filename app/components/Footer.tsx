@@ -9,7 +9,7 @@ export default function Footer() {
         <p>
           Proxy Tech Inc.
           <br />
-          Providing reliable tech since 1992
+          Providing reliable tech since 2024
         </p>
       </aside>
       <nav>
