@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Code() {
   return (
-    <div className=" text-center hero">
-      <div className="mockup-code   w-[80%] box-content">
+    <div className="text-center hero">
+      <div className="mockup-code w-[80%] box-content">
         <div
           role="tablist"
           className="tabs bg-transparent text-red-200 tabs-lifted"
@@ -20,11 +20,13 @@ export default function Code() {
             className="tab-content bg-transparent border-t-slate-100 rounded-box p-6 ml-7"
           >
             <pre data-prefix="1">
-              <code>fetch('http://localhost:3000/api/route/post')</code>
+              <code>
+                fetch(&apos;http://localhost:3000/api/route/post&apos;)
+              </code>
 
-              <code>.then(res ={">"} res.json())</code>
+              <code>.then(res =&gt; res.json())</code>
 
-              <code>.then(data ={">"} console.log(data))</code>
+              <code>.then(data =&gt; console.log(data))</code>
             </pre>
           </div>
 
@@ -38,14 +40,16 @@ export default function Code() {
           />
           <div
             role="tabpanel"
-            className="tab-content bg-transparent  border-t-slate-100   p-6"
+            className="tab-content bg-transparent border-t-slate-100 p-6"
           >
             <pre data-prefix="1">
-              <code>axios.get('http://localhost:3000/api/route/post')</code>
+              <code>
+                axios.get(&apos;http://localhost:3000/api/route/post&apos;)
+              </code>
 
-              <code>.then(res ={">"} res.json())</code>
+              <code>.then(res =&gt; res.json())</code>
 
-              <code>.then(result ={">"} console.log(result.data))</code>
+              <code>.then(result =&gt; console.log(result.data))</code>
             </pre>
           </div>
         </div>
