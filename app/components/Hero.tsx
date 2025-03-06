@@ -8,7 +8,7 @@ export default function Hero() {
           <h1 className="text-5xl font-bold">The Developer Api Emulator</h1>
           <p className="py-6">
             Free fake and reliable API for testing and prototyping. Powered by
-            JSON nexjs engine
+            JSON nextjs engine
           </p>
           <button className="btn btn-primary">How to use</button>
         </div>
