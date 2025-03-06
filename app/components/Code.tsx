@@ -21,7 +21,7 @@ export default function Code() {
           >
             <pre data-prefix="1">
               <code>
-                fetch(&apos;http://localhost:3000/api/route/post&apos;)
+                fetch(&apos;api-emulator.vercel.app/api/route/post&apos;)
               </code>
 
               <code>.then(res =&gt; res.json())</code>
@@ -44,7 +44,7 @@ export default function Code() {
           >
             <pre data-prefix="1">
               <code>
-                axios.get(&apos;http://localhost:3000/api/route/post&apos;)
+                axios.get(&apos;api-emulator.vercel.app/api/route/post&apos;)
               </code>
 
               <code>.then(res =&gt; res.json())</code>

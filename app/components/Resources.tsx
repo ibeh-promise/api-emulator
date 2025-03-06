@@ -12,7 +12,7 @@ export default function Resources({ setUrl, setIsModalOpen }) {
               <button
                 className="btn btn-primary"
                 onClick={() => {
-                  setUrl("http://localhost:3000/api/route/posts");
+                  setUrl("api-emulator.vercel.app/api/route/posts");
                   setIsModalOpen(true);
                 }}
               >
@@ -29,7 +29,7 @@ export default function Resources({ setUrl, setIsModalOpen }) {
               <button
                 className="btn btn-primary"
                 onClick={() => {
-                  setUrl("http://localhost:3000/api/route/comments");
+                  setUrl("api-emulator.vercel.app/api/route/comments");
                   setIsModalOpen(true);
                 }}
               >
@@ -46,7 +46,7 @@ export default function Resources({ setUrl, setIsModalOpen }) {
               <button
                 className="btn btn-primary"
                 onClick={() => {
-                  setUrl("http://localhost:3000/api/route/albums");
+                  setUrl("api-emulator.vercel.app/api/route/albums");
                   setIsModalOpen(true);
                 }}
               >
@@ -65,7 +65,7 @@ export default function Resources({ setUrl, setIsModalOpen }) {
               <button
                 className="btn btn-primary"
                 onClick={() => {
-                  setUrl("http://localhost:3000/api/route/photos");
+                  setUrl("api-emulator.vercel.app/api/route/photos");
                   setIsModalOpen(true);
                 }}
               >
@@ -82,7 +82,7 @@ export default function Resources({ setUrl, setIsModalOpen }) {
               <button
                 className="btn btn-primary"
                 onClick={() => {
-                  setUrl("http://localhost:3000/api/route/todos");
+                  setUrl("api-emulator.vercel.app/api/route/todos");
                   setIsModalOpen(true);
                 }}
               >
@@ -99,7 +99,7 @@ export default function Resources({ setUrl, setIsModalOpen }) {
               <button
                 className="btn btn-primary"
                 onClick={() => {
-                  setUrl("http://localhost:3000/api/route/users");
+                  setUrl("api-emulator.vercel.app/api/route/users");
                   setIsModalOpen(true);
                 }}
               >
