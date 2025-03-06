@@ -33,13 +33,11 @@ export default function Hero() {
               ✖
             </button>
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/GUgvTWNw0f4?si=Xs2V0tq66yljYkYl"
               title="YouTube Video"
               frameBorder="0"
               allowFullScreen
-              className="rounded-lg"
+              className="rounded-lg w-[300px] h-[200px]"
             ></iframe>
           </div>
         </div>
