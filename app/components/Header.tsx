@@ -1,7 +1,22 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
+  const [theme, setTheme] = useState(
+    typeof window !== "undefined"
+      ? localStorage.getItem("theme") || "light"
+      : "light"
+  );
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
+
   return (
     <div className="navbar bg-base-500 ">
       <div className="flex-1">
@@ -10,23 +25,14 @@ const Header = () => {
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Link</a>
-          </li>
-          <li>
             <details>
               <summary>Themes</summary>
               <ul className="bg-base-100 rounded-t-none p-2">
                 <li>
-                  <button
-                    onClick={() => localStorage.setItem("theme", "light")}
-                  >
-                    Light
-                  </button>
+                  <button onClick={() => setTheme("light")}>Light</button>
                 </li>
                 <li>
-                  <button onClick={() => localStorage.setItem("theme", "dark")}>
-                    Dark
-                  </button>
+                  <button onClick={() => setTheme("dark")}>Dark</button>
                 </li>
               </ul>
             </details>
@@ -50,7 +56,8 @@ const Header = () => {
         </svg>
         <input
           type="checkbox"
-          value="synthwave"
+          checked={theme === "dark"}
+          onChange={toggleTheme}
           className="toggle theme-controller"
         />
         <svg
