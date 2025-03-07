@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 export async function GET() {
   try {
-    return NextResponse.json([
+    const response = NextResponse.json([
       {
         postId: 1,
         id: 1,
@@ -3503,6 +3503,17 @@ export async function GET() {
         body: "perceive who pain and\ncome unless they want but\nid the whole inventor pleasure of labors and will happen\naut or or most because times as all",
       },
     ]);
+    response.headers.set("Access-Control-Allow-Origin", "*");
+    response.headers.set(
+      "Access-Control-Allow-Methods",
+      "GET,OPTIONS,POST,PUT"
+    );
+    response.headers.set(
+      "Access-Control-Allow-Headers",
+      "Content-Type, Authorization"
+    );
+
+    return response;
   } catch (error) {
     throw error;
   }

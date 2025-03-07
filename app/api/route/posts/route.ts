@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 export async function GET() {
   try {
-    return NextResponse.json([
+    const response = NextResponse.json([
       {
         userId: 1,
         id: 1,
@@ -618,6 +618,17 @@ export async function GET() {
         body: "cupidity which is from the ways they do not know how to solve the pleasure error and so said in the sailor who is less great and distinction him we accuse reason error or",
       },
     ]);
+    response.headers.set("Access-Control-Allow-Origin", "*");
+    response.headers.set(
+      "Access-Control-Allow-Methods",
+      "GET,OPTIONS,POST,PUT"
+    );
+    response.headers.set(
+      "Access-Control-Allow-Headers",
+      "Content-Type, Authorization"
+    );
+
+    return response;
   } catch (error) {
     throw error;
   }

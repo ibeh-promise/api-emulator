@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 export async function GET() {
   try {
-    return NextResponse.json([
+    const response = NextResponse.json([
       {
         userId: 1,
         id: 1,
@@ -511,6 +511,17 @@ export async function GET() {
         title: "enim repellat iste",
       },
     ]);
+    response.headers.set("Access-Control-Allow-Origin", "*");
+    response.headers.set(
+      "Access-Control-Allow-Methods",
+      "GET,OPTIONS,POST,PUT"
+    );
+    response.headers.set(
+      "Access-Control-Allow-Headers",
+      "Content-Type, Authorization"
+    );
+
+    return response;
   } catch (error) {
     throw error;
   }
